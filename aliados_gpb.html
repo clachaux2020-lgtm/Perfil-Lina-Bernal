@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aliados GPB - Growth People & Business</title>
+    <style>
+        :root {
+            --gpb-blue: #1B3A6B;
+            --gpb-orange: #D85A30;
+            --gpb-light-blue: #E6F1FB;
+            --gpb-text: #333333;
+            --gpb-bg: #FFFFFF;
+            --gpb-border: #E0E0E0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--gpb-text);
+            background-color: #F9FAFB;
+        }
+
+        header {
+            background-color: var(--gpb-bg);
+            padding: 1.5rem;
+            text-align: center;
+            border-bottom: 1px solid var(--gpb-border);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            max-width: 150px;
+            height: auto;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .intro h1 {
+            color: var(--gpb-blue);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .intro p {
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Grid de Aliados */
+        .aliados-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        /* Card de Aliado */
+        .aliado-card {
+            background: var(--gpb-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            border: 1px solid var(--gpb-border);
+        }
+
+        @media (min-width: 768px) {
+            .aliado-card {
+                flex-direction: row;
+            }
+        }
+
+        .aliado-img-container {
+            flex: 0 0 300px;
+            background-color: var(--gpb-blue);
+        }
+
+        .aliado-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .aliado-content {
+            padding: 2rem;
+            flex: 1;
+        }
+
+        .aliado-label {
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--gpb-orange);
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .aliado-name {
+            font-size: 1.8rem;
+            color: var(--gpb-blue);
+            margin-bottom: 0.5rem;
+        }
+
+        .aliado-role {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 1.5rem;
+            font-style: italic;
+        }
+
+        .aliado-bio {
+            margin-bottom: 1.5rem;
+        }
+
+        .aliado-bio p {
+            margin-bottom: 1rem;
+        }
+
+        /* Modelo ENI Section */
+        .modelo-eni {
+            background-color: var(--gpb-light-blue);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+        }
+
+        .modelo-title {
+            color: var(--gpb-blue);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .modelo-desc {
+            font-size: 0.95rem;
+            color: #444;
+        }
+
+        .pilares-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .pilar-item {
+            background: white;
+            padding: 0.75rem;
+            border-radius: 6px;
+            border: 1px solid #B5D4F4;
+            font-size: 0.85rem;
+        }
+
+        .pilar-item strong {
+            display: block;
+            color: var(--gpb-blue);
+            margin-bottom: 2px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 3rem 1.5rem;
+            color: #888;
+            font-size: 0.9rem;
+            border-top: 1px solid var(--gpb-border);
+            margin-top: 4rem;
+        }
+
+        .btn-back {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.8rem 1.5rem;
+            background-color: var(--gpb-blue);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 500;
+            transition: background 0.3s;
+        }
+
+        .btn-back:hover {
+            background-color: #0c2a52;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- Aquí iría el logo de GPB -->
+        <div style="font-weight: bold; color: var(--gpb-blue); font-size: 1.5rem;">GPB <span style="color: var(--gpb-orange);">Growth</span></div>
+    </header>
+
+    <div class="container">
+        <div class="intro">
+            <h1>Nuestros Aliados</h1>
+            <p>En GPB creemos en el poder de la colaboración. Trabajamos con expertos que comparten nuestra visión de transformar organizaciones a través del desarrollo humano.</p>
+        </div>
+
+        <div class="aliados-grid">
+            <!-- Perfil de Lina Bernal -->
+            <div class="aliado-card">
+                <div class="aliado-img-container">
+                    <!-- Nota: El usuario debe reemplazar esta ruta con la imagen real subida a su servidor -->
+                    <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663508990263/EYbLnqZBjWkpxeXU.png" alt="Lina Bernal" class="aliado-img">
+                </div>
+                <div class="aliado-content">
+                    <span class="aliado-label">Aliada Estratégica</span>
+                    <h2 class="aliado-name">Lina Bernal</h2>
+                    <p class="aliado-role">Comunicadora Social · Facilitadora en Comunicación Consciente · Experiencia del Cliente</p>
+                    
+                    <div class="aliado-bio">
+                        <p>Comunicadora social con casi dos décadas de experiencia acompañando a organizaciones a construir relaciones más claras, más honestas y más efectivas.</p>
+                        <p>Hoy en GPB acompaña los procesos comerciales y facilita programas de comunicación para líderes y equipos que quieren comunicarse con mayor conciencia, claridad e impacto.</p>
+                    </div>
+
+                    <div class="modelo-eni">
+                        <div class="modelo-title">
+                            <span>✨</span> Modelo de Ecología Narrativa Interna (ENI)
+                        </div>
+                        <p class="modelo-desc">Una propuesta propia de acompañamiento comunicacional que trabaja la forma en que las personas organizan su experiencia a través del lenguaje.</p>
+                        
+                        <div class="pilares-grid">
+                            <div class="pilar-item">
+                                <strong>Consciencia narrativa</strong>
+                                Observar cómo me cuento mi propia historia.
+                            </div>
+                            <div class="pilar-item">
+                                <strong>Resignificación</strong>
+                                Abrir alternativas a narrativas rígidas.
+                            </div>
+                            <div class="pilar-item">
+                                <strong>Autocompasión verbal</strong>
+                                Comunicación no violenta consigo mismo.
+                            </div>
+                            <div class="pilar-item">
+                                <strong>Claridad emocional</strong>
+                                Nombrar con precisión lo que se siente.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Espacio para futuros aliados (Opcional/Placeholder) -->
+            <!-- 
+            <div class="aliado-card" style="opacity: 0.7; border-style: dashed;">
+                <div class="aliado-content" style="text-align: center; padding: 4rem;">
+                    <p style="color: #888;">Próximamente más aliados...</p>
+                </div>
+            </div> 
+            -->
+        </div>
+
+        <div style="text-align: center;">
+            <a href="https://www.grupogpb.com" class="btn-back">Volver al Inicio</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2026 GPB - Growth People & Business. Todos los derechos reservados.
+    </div>
+
+</body>
+</html>
