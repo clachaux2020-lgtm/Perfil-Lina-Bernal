@@ -1,0 +1,111 @@
+
+<style>
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:var(--font-sans);}
+  .wrap{padding:1.5rem 0;max-width:720px;margin:0 auto;}
+  .hero{background:#1B3A6B;border-radius:var(--border-radius-lg);overflow:hidden;display:grid;grid-template-columns:220px 1fr;}
+  .hero-img{width:220px;height:280px;object-fit:cover;object-position:center top;display:block;}
+  .hero-body{padding:1.75rem 1.5rem;display:flex;flex-direction:column;justify-content:center;gap:12px;}
+  .gpb-label{font-size:10px;font-weight:500;letter-spacing:0.12em;color:#F0997B;text-transform:uppercase;}
+  .hero-name{font-size:24px;font-weight:500;color:#E6F1FB;line-height:1.2;}
+  .hero-role{font-size:13px;color:#B5D4F4;line-height:1.5;}
+  .hero-cala{display:inline-flex;align-items:center;gap:6px;background:#D85A30;color:#FAECE7;font-size:11px;font-weight:500;padding:4px 10px;border-radius:99px;margin-top:4px;width:fit-content;}
+  .hero-dot{width:6px;height:6px;border-radius:50%;background:#F0997B;flex-shrink:0;}
+  .section{margin-top:1.25rem;background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:1.25rem 1.5rem;}
+  .sec-title{font-size:11px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:#D85A30;margin-bottom:10px;}
+  .bio{font-size:14px;color:var(--color-text-primary);line-height:1.75;}
+  .bio p{margin-bottom:10px;}
+  .bio p:last-child{margin-bottom:0;}
+  .modelo-header{background:#1B3A6B;border-radius:var(--border-radius-md);padding:1rem 1.25rem;margin-bottom:12px;}
+  .modelo-title{font-size:15px;font-weight:500;color:#E6F1FB;margin-bottom:4px;}
+  .modelo-sub{font-size:12px;color:#85B7EB;line-height:1.5;}
+  .pilares{display:grid;grid-template-columns:repeat(auto-fit,minmax(0,1fr));gap:8px;margin-bottom:12px;}
+  .pilar{background:#E6F1FB;border:0.5px solid #85B7EB;border-radius:var(--border-radius-md);padding:10px 12px;}
+  .pilar-title{font-size:12px;font-weight:500;color:#0C447C;margin-bottom:3px;}
+  .pilar-text{font-size:11px;color:#185FA5;line-height:1.4;}
+  .regla{background:#FAECE7;border-left:3px solid #D85A30;border-radius:0 var(--border-radius-md) var(--border-radius-md) 0;padding:10px 14px;}
+  .regla-label{font-size:10px;font-weight:500;color:#993C1D;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:4px;}
+  .regla-text{font-size:13px;color:#712B13;line-height:1.5;}
+  .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px;}
+  .tag{background:#E6F1FB;color:#0C447C;font-size:11px;padding:4px 11px;border-radius:99px;border:0.5px solid #85B7EB;}
+  .divider{border:none;border-top:0.5px solid var(--color-border-tertiary);margin:12px 0;}
+  .li-item{font-size:13px;color:var(--color-text-primary);line-height:1.6;padding-left:14px;position:relative;}
+  .li-item::before{content:"";position:absolute;left:0;top:8px;width:5px;height:5px;border-radius:50%;background:#D85A30;}
+  .li-grid{display:flex;flex-direction:column;gap:5px;}
+</style>
+
+<div class="wrap">
+
+  <div class="hero">
+    <img class="hero-img" src="/mnt/user-data/uploads/ChatGPT_Image_10_abr_2026__00_06_37.png" alt="Lina Bernal" onerror="this.style.background='#2A4F8A';this.style.display='flex';this.outerHTML='<div style=\'width:220px;height:280px;background:#2A4F8A;display:flex;align-items:center;justify-content:center;font-size:48px;font-weight:500;color:#B5D4F4;\'>LB</div>'">
+    <div class="hero-body">
+      <span class="gpb-label">Aliada GPB</span>
+      <div class="hero-name">Lina Bernal</div>
+      <div class="hero-role">Comunicadora Social · Facilitadora en Comunicación Consciente · Experiencia del Cliente<br><br>Creadora del Modelo de Ecología Narrativa Interna (ENI)</div>
+      <span class="hero-cala"><span class="hero-dot"></span>En certificación — Liderazgo Personal con Ismael Cala</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="sec-title">Sobre Lina</div>
+    <div class="bio">
+      <p>Comunicadora social con casi dos décadas de experiencia acompañando a organizaciones a construir relaciones más claras, más honestas y más efectivas. Ha estado cerca de los desafíos reales de la comunicación organizacional: esos momentos en que lo que no se dice pesa más que lo que se dice.</p>
+      <p>Hoy en GPB acompaña los procesos comerciales y facilita programas de comunicación para líderes y equipos que quieren comunicarse con mayor conciencia, claridad e impacto.</p>
+      <p>Es creadora del <strong style="color:#1B3A6B;font-weight:500;">Modelo de Ecología Narrativa Interna (ENI)</strong>, una propuesta propia de acompañamiento comunicacional que trabaja la forma en que las personas organizan su experiencia a través del lenguaje.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="sec-title">Modelo ENI — Ecología Narrativa Interna</div>
+    <div class="modelo-header">
+      <div class="modelo-title">Modelo de Acompañamiento Comunicacional</div>
+      <div class="modelo-sub">La experiencia humana se organiza y transforma a través del lenguaje.</div>
+    </div>
+
+    <div class="regla">
+      <div class="regla-label">Pregunta maestra del modelo</div>
+      <div class="regla-text">No <em>¿por qué pasa esto?</em> — sino <em>¿cómo lo estás nombrando y qué efecto tiene eso en ti?</em></div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="sec-title" style="margin-bottom:8px;">Núcleo del modelo</div>
+    <div class="pilares">
+      <div class="pilar">
+        <div class="pilar-title">Consciencia narrativa</div>
+        <div class="pilar-text">Observar cómo me cuento mi propia historia</div>
+      </div>
+      <div class="pilar">
+        <div class="pilar-title">Resignificación del lenguaje</div>
+        <div class="pilar-text">Abrir alternativas a narrativas rígidas</div>
+      </div>
+      <div class="pilar">
+        <div class="pilar-title">Autocompasión verbal</div>
+        <div class="pilar-text">Comunicación no violenta consigo mismo</div>
+      </div>
+      <div class="pilar">
+        <div class="pilar-title">Claridad emocional</div>
+        <div class="pilar-text">Nombrar con precisión lo que se siente</div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="sec-title" style="margin-bottom:8px;">Posición profesional</div>
+    <div class="li-grid">
+      <div class="li-item">Facilitadora de procesos de consciencia narrativa — no terapeuta, no coach motivacional</div>
+      <div class="li-item">Trabaja sobre cómo las personas se cuentan su vida y cómo el lenguaje sostiene o libera estados internos</div>
+      <div class="li-item">Opera en dos modalidades: acompañamiento autónomo y apoyo complementario a procesos psicológicos</div>
+    </div>
+
+    <div class="tags">
+      <span class="tag">Comunicación consciente</span>
+      <span class="tag">Narrativa interna</span>
+      <span class="tag">Escucha empática</span>
+      <span class="tag">CNV</span>
+      <span class="tag">Autocompasión</span>
+      <span class="tag">Liderazgo personal</span>
+    </div>
+  </div>
+
+</div>
